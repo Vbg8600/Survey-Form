@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+    <title>Sprinzy-Survey Form</title>
+</head>
+
+<body>
+    <h1 id="title">Sprinzy-Feedback Form</h1>
+    <p id="description">Thank you for choosing Sprinzy beverages! We'd love to hear your feedback on our products.
+        Please take a moment to complete this survey.</p>
+
+    <form id="survey-form">
+        <label for="name" id="name-label">Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+        <label for="email" id="email-label">Email</label>
+        <input type="email" id="email" placeholder="Enter your Email" required>
+
+        <label for="number" id="number-label">Age(optional)</label>
+        <input type="number" id="number" placeholder="Age" required min="10" max="100">
+       
+        <label for="dropdown" id="product-label">Select the Sprinzy product you tried:</label>
+        <select id="dropdown">
+            <option value="select-product" selected>Select Product</option>
+            <option value="mango">Mango Soda</option>
+            <option value="jeera">Jeera Soda</option>
+            <option value="lemon">Lemon Soda</option>
+        </select>
+      <br>  <hr>
+<!-- Taste Area -->
+        <label for="taste" id="taste-label">How would you rate the taste of the product?</label>
+       <br> <input type="radio" id="taste-excellent" name="taste" value="excellent">
+        <label for="taste-excellent">Excellent</label>
+        <input type="radio" id="taste-good" name="taste" value="good">
+        <label for="taste-good">Good</label>
+        <input type="radio" id="taste-average" name="taste" value="average">
+        <label for="taste-average">Average</label>
+        <input type="radio" id="taste-poor" name="taste" value="poor">
+        <label for="taste-poor">Poor</label>
+        <hr>
+<!-- Performance Area -->
+        <label for="performance" id="performance-label">How would you rate the performance of the product (e.g.,
+            carbonation, freshness)?</label>
+        <input type="radio" id="performance-excellent" name="performance" value="excellent">
+        <label for="performance-excellent">Excellent</label>
+        <input type="radio" id="performance-good" name="performance" value="good">
+        <label for="performance-good">Good</label>
+        <input type="radio" id="performance-average" name="performance" value="average">
+        <label for="performance-average">Average</label>
+        <input type="radio" id="performance-poor" name="performance" value="poor">
+        <label for="performance-poor">Poor</label>
+<!-- Feed back Area -->
+<hr>
+        <label for="">What would you like to see improved? (Check all that apply)</label>
+        <input type="checkbox" id="taste" name="checkbox-group" value="taste">
+        <label for="taste">Taste</label>
+        
+        <input type="checkbox" id="sweetness" name="checkbox-group" value="sweetness">
+        <label for="sweetness">Sweetness</label>
+        
+        <input type="checkbox" id="carbonation" name="checkbox-group" value="carbonation">
+        <label for="carbonation">Carbonation</label>
+        <hr>
+        <label for="comments">Any additional comments or suggestions?</label>
+        <textarea id="comments" placeholder="Share your thoughts..."></textarea>
+
+        <input type="submit" id="submit" value="Submit Feedback">
+    </form>
+</body>
+
+</html>
